@@ -1,12 +1,13 @@
 [package]
-description = "OpenEthereum"
-name = "openethereum"
+description = "ton618"
+name = "ton618"
 # NOTE Make sure to update util/version/Cargo.toml as well
-version = "3.3.0-rc.4"
+version = "0.1"
 license = "GPL-3.0"
 authors = [
 	"OpenEthereum developers",
-	"Parity Technologies <admin@parity.io>"
+	"Parity Technologies <admin@parity.io>",
+	"pavelkrolevets@gmail.com"
 ]
 
 [dependencies]
@@ -42,7 +43,7 @@ ethcore-blockchain = { path = "crates/ethcore/blockchain" }
 ethcore-call-contract = { path = "crates/vm/call-contract"}
 ethcore-db = { path = "crates/db/db" }
 ethcore-io = { path = "crates/runtime/io" }
-ethcore-logger = { path = "bin/oe/logger" }
+ethcore-logger = { path = "bin/ton618/logger" }
 ethcore-miner = { path = "crates/concensus/miner" }
 ethcore-network = { path = "crates/net/network" }
 ethcore-service = { path = "crates/ethcore/service" }
@@ -107,11 +108,11 @@ deadlock_detection = ["parking_lot/deadlock_detection"]
 memory_profiling = []
 
 [lib]
-path = "bin/oe/lib.rs"
+path = "bin/ton618/lib.rs"
 
 [[bin]]
-path = "bin/oe/main.rs"
-name = "openethereum"
+path = "bin/ton618/main.rs"
+name = "ton618"
 
 [profile.test]
 lto = false

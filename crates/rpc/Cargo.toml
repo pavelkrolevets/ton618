@@ -36,7 +36,7 @@ common-types = { path = "../ethcore/types" }
 ethash = { path = "../concensus/ethash" }
 ethcore = { path = "../ethcore" }
 ethcore-accounts = { path = "../accounts", optional = true }
-ethcore-logger = { path = "../../bin/oe/logger" }
+ethcore-logger = { path = "../../bin/ton618/logger" }
 ethcore-miner = { path = "../concensus/miner" }
 ethcore-network = { path = "../net/network" }
 ethcore-sync = { path = "../ethcore/sync" }
